@@ -628,7 +628,7 @@
          
 	  <form method="GET" action="https://pago.prodemar.cl/pagar"  
 	    target="_top">
-	    <input name="amount" type="search" placeholder="A pagar" [value] = " (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*0.001).toFixed(3) " >
+	    <input name="amount" type="search" placeholder="A pagar" [value] = " (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*1)) " >
 	    <a id="sample-logo" href="/"></a> 
 	    <input type="submit">
 	  </form>
