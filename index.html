@@ -928,6 +928,13 @@
 
         <div>
           <span>Pagar con Webpay de Transbank
+          <form method="GET" action="https://pago.prodemar.cl/pagar"  
+            target="_top">
+            <input name="amount" type="search" placeholder="A pagar" [value] = "''.concat( (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*1).toFixed(0)) " >
+            <a id="sample-logo" href="/"></a> 
+            <input type="submit">
+          </form>
+
             <a href= "https://pago.prodemar.cl/pagar/?amount=24000 ">
               <amp-img class="ampstart-btn ml10" src="img/pagar.svg" width="106" height="56"></amp-img>
             </span>
