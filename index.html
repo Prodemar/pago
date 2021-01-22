@@ -625,15 +625,15 @@
 	    </amp-img>
 	  </a>
 
-          <!--
-	  <form method="GET" action="https://shop.alectrica.cl/productos/10" 
+         
+	  <form method="GET" action="https://pago.prodemar.cl/pagar"  
 	    target="_top">
-	    <input name="search" type="search" placeholder="Buscar">
+	    <input name="search" type="search" placeholder="A pagar" value= "'$'.concat( (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*0.001).toFixed(3)) " >
 	    <a id="sample-logo" href="/"></a> 
-	    <input type="submit" value="">
+	    <input type="submit">
 	  </form>
 
-          -->
+     
 	</div>
 
 
@@ -928,7 +928,7 @@
 
         <div>
           <span>Pagar con Webpay de Transbank
-            <a [href]= "https://pago.prodemar.cl/pagar/?amount='$'.concat( (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*0.001).toFixed(3)) ">
+            <a href= "https://pago.prodemar.cl/pagar/?amount=24000 ">
               <amp-img class="ampstart-btn ml10" src="img/pagar.svg" width="106" height="56"></amp-img>
             </span>
           </a>
