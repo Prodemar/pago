@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html amp='' lang='es-CL' prefix='og: http://ogp.me/ns#'>
   <head>
@@ -930,6 +931,8 @@
           <form method="GET" action="https://pago.prodemar.cl/pagar"  
             target="_top">
             <input readonly name="amount" type="text" placeholder="Monto Bruto" [value] = "''.concat( (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*1).toFixed(0)) " >
+            <input readonly name="productos_id" type="text" placeholder="Productos" [value] = "''.concat( (values( itemsSrc.concat([0])).map( (x,i) => x.monto ).reduce( (acumulador, valor_actual) => acumulador + valor_actual )*1).toFixed(0)) " >
+
             <a id="sample-logo" href="/"></a> 
             <input type="submit" value="Ir a Pagar">
           </form>
