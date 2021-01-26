@@ -765,7 +765,7 @@
 		Llamar
 	      </a>
               <button 
-                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 0,  monto: product[product.selectedColor].montos[0], precio: product[product.selectedColor].precios[0], img: product[product.selectedColor].imagenes[0]}]) } ),item-list.refresh "
+                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id:  product[product.selectedColor].ids[0],  monto: product[product.selectedColor].montos[0], precio: product[product.selectedColor].precios[0], img: product[product.selectedColor].imagenes[0]}]) } ),item-list.refresh "
                 class="ampstart-btn caps m2 agregar-gallery-button">Agregar
               </button>
 
@@ -785,7 +785,7 @@
 	      role="button"
 	      tabindex="0">
               <button 
-                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 1,  monto: product[product.selectedColor].montos[1], precio: product[product.selectedColor].precios[1], img: product[product.selectedColor].imagenes[1]}]) } ),item-list.refresh "
+                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id:  product[product.selectedColor].ids[1],  monto: product[product.selectedColor].montos[1], precio: product[product.selectedColor].precios[1], img: product[product.selectedColor].imagenes[1]}]) } ),item-list.refresh "
                 class="ampstart-btn caps m2 agregar-gallery-button">Agregar
               </button>
 	      <amp-img src="/img/camaron_ecuatoriano_36_40_crudo_con_cascara.jpeg"
@@ -803,7 +803,7 @@
 	      role="button"
 	      tabindex="0">
               <button 
-                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 2,  monto: product[product.selectedColor].montos[2], precio: product[product.selectedColor].precios[2], img: product[product.selectedColor].imagenes[2]}]) } ),item-list.refresh "
+                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id:  product[product.selectedColor].ids[2],  monto: product[product.selectedColor].montos[2], precio: product[product.selectedColor].precios[2], img: product[product.selectedColor].imagenes[2]}]) } ),item-list.refresh "
                 class="ampstart-btn caps m2 agregar-gallery-button">Agregar
               </button>
 	      <amp-img src="/img/camaron_100_150_cocido_pelado.jpeg"
@@ -822,7 +822,7 @@
 	      role="button"
 	      tabindex="0">
               <button 
-                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 3,  monto: product[product.selectedColor].montos[3], precio: product[product.selectedColor].precios[3], img: product[product.selectedColor].imagenes[3]}]) } ),item-list.refresh "
+                on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id:  product[product.selectedColor].ids[3],  monto: product[product.selectedColor].montos[3], precio: product[product.selectedColor].precios[3], img: product[product.selectedColor].imagenes[3]}]) } ),item-list.refresh "
                 class="ampstart-btn caps m2 agregar-gallery-button">Agregar
               </button>
 	      <amp-img src="/img/bolsa_camaron_100_150_cocido_pelado.jpeg"
@@ -891,10 +891,10 @@
                   "3": "$15.000"
                   },
 		"ids" : {
-		  "0": "",
-		  "1": "",
-		  "2": "",
-		  "3": ""
+		  "0": "1",
+		  "1": "2",
+		  "2": "3",
+		  "3": "4"
 		  },
 		"nombres": {
 		  "0": "Ostión con Coral",
